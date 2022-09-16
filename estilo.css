@@ -19,7 +19,7 @@ h6 {
 .bgimg {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("Images_Prueba/Logo_Corregido.jpg");
+    background-image: url("/Images_Prueba/Logo_Corregido.jpg");
     min-height: 120%;
 }
 
