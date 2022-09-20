@@ -1,0 +1,53 @@
+@mixin movil {
+  @media screen and (max-width: rem(750px)){
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: rem(750px)){
+    @content;
+  }
+}
+
+@function rem($size) {
+  @return $size * 1rem/16px;
+}
+
+@function vw($size) {
+  @return 1366px/100 * $size/1vw * 1rem/16px;
+}
+
+@function vh($size) {
+  @return 766px/100 * $size/1vh * 1rem/16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.flex-col {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  @include movil {
+    display: initial;
+  }
+}

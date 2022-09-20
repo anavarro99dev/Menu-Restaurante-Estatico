@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="w3codecolor.js">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilosSASS.css">
 </head>
 
 <body>
@@ -28,327 +29,341 @@
     <!-- Header with image -->
     <header class="bgimg w3-display-container w3-grayscale-min" id="home">
         <div class="w3-display-bottomleft w3-padding">
-            <a href="#Horario" style="scroll-behavior:smooth;" class="w3-hide-small"><span id="boton_horario"
-                    class="w3-tag w3-button w3-xxlarge w3-black">Horario de Apertura</span></a>
-            <!-- TODO Realizado: Realizar codigo JS para automatizar el horario de acuerdo con el dia actual de la semana -->
+            <a href="#Horario" style="scroll-behavior:smooth;" class="w3-hide-small">
+                <span id="boton_horario"
+                    class="w3-tag w3-button w3-xlarge w3-black"
+                    >
+                    Horario de Apertura
+                </span>
+            </a>
+        </div>
+        <div class="w3-display-bottomright w3-padding">
+            <a href="#menu" class="w3-hide-small">
+                <span id="boton_menu"
+                class="w3-tag- w3-button w3-xlarge w3-black"
+                >
+                Muestrame el MENU
+                </span>
+            </a>
         </div>
         <div class="w3-display-middle w3-center">
             <span class="w3-hide-small" style="font-size:180px;color:#955251"><b>Nombre<br>del Lugar</b></span>
             <span class="w3-hide-large w3-hide-medium" style="font-size:60px;color: #955251">
                 <b>Nombre<br>del Lugar</b>
             </span>
-            <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Muestrame el MENU</a></p>
         </div>
     </header>
 
     <!-- Menu Container -->
     <!-- TODO: No realizado. Realizar el Menu como un Scrool-Spy -->
-    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
-        <div>
-            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
-            <div class="w3-row w3-center w3-border w3-border-dark-grey">
-                <a href="javascript:void(0)" onclick="openMenu(event, 'Cafe');" id="myLink">
-                    <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Cafe</div>
-                </a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
-                    <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Bebidas</div>
-                </a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'Entrantes');">
-                    <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Entrantes</div>
-                </a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'Dulces');">
-                    <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Dulces</div>
-                </a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'Comida');">
-                    <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Comida</div>
-                </a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'Helados');">
-                    <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Helados</div>
-                </a>
+    <div class="w3-container w3-black w3-padding-64 w3-large" id="menu">
+
+        <h1 class="w3-center w3-xxlarge" style="margin-bottom:64px">MENU</h1>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Cafe');" id="myLink">
+                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Cafe</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
+                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Bebidas</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Entrantes');">
+                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Entrantes</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Dulces');">
+                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Dulces</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Comida');">
+                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Comida</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Helados');">
+                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Helados</div>
+            </a>
+        </div>
+
+        <!-- TODO: Hacer una funcion de JS para automatizar este proceso -->
+        <div id="Cafe" class="w3-container menu w3-padding-32 w3-white">
+
+            <!-- TODO: Arreglar la vista movil -->
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/1.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
+                </div>
+
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Cafe 1</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Cafe 1</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/2.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
+                </div>
+
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Cafe 2</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Cafe 2</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div style="width:150px;height: 150px;background-image:url(Images_Prueba/3.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
+                </div>
+
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Cafe 3</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Cafe 3</p>
+                </div>
             </div>
 
-            <!-- TODO: Hacer una funcion de JS para automatizar este proceso -->
-            <div id="Cafe" class="w3-container menu w3-padding-32 w3-white">
 
-                <!-- TODO: Arreglar la vista movil -->
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/1.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
+        </div>
 
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Cafe 1</u></b> <span class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Cafe 1</p>
-                    </div>
+        <div id="Bebidas" class="w3-container menu w3-padding-32 w3-white">
+
+            <div class="w3-row">
+                <div style="width:150px;height: 150px;background-image:url(Images_Prueba/4.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
                 </div>
-                <hr>
 
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/2.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
-
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Cafe 2</u></b> <span class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Cafe 2</p>
-                    </div>
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Bebida 1</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Bebida 1</p>
                 </div>
-                <hr>
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/3.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
-
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Cafe 3</u></b> <span class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Cafe 3</p>
-                    </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/5.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
                 </div>
-                <hr>
 
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Bebida 2</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Bebida 2</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/6.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
+                </div>
+
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Bebida 3</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Bebida 3</p>
+                </div>
             </div>
 
-            <div id="Bebidas" class="w3-container menu w3-padding-32 w3-white">
 
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/19.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
+        </div>
 
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Bebida 1</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Bebida 1</p>
-                    </div>
+        <div id="Entrantes" class="w3-container menu w3-padding-32 w3-white">
+
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/7.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
                 </div>
-                <hr>
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/5.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
 
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Bebida 2</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Bebida 2</p>
-                    </div>
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Entrante 1</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Entrante 1</p>
                 </div>
-                <hr>
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/6.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
-
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Bebida 3</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Bebida 3</p>
-                    </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/8.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
                 </div>
-                <hr>
 
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Entrante 2</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Entrante 2</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/9.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
+                </div>
+
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Entrante 3</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Entrante 3</p>
+                </div>
             </div>
 
-            <div id="Entrantes" class="w3-container menu w3-padding-32 w3-white">
 
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/7.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
+        </div>
 
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Entrante 1</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Entrante 1</p>
-                    </div>
+        <div id="Dulces" class="w3-container menu w3-padding-32 w3-white">
+
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/10.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
                 </div>
-                <hr>
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/8.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
 
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Entrante 2</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Entrante 2</p>
-                    </div>
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Dulce 1</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Dulces 1</p>
                 </div>
-                <hr>
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/9.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
-
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Entrante 3</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Entrante 3</p>
-                    </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/11.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
                 </div>
-                <hr>
 
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Dulces 2</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Dulces 2</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/12.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
+                </div>
+
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Dulces 3</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Cafe 3</p>
+                </div>
             </div>
 
-            <div id="Dulces" class="w3-container menu w3-padding-32 w3-white">
 
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/10.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
+        </div>
 
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Dulce 1</u></b> <span class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Dulces 1</p>
-                    </div>
+        <div id="Comida" class="w3-container menu w3-padding-32 w3-white">
+
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/13.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
                 </div>
-                <hr>
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/11.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
 
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Dulces 2</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Dulces 2</p>
-                    </div>
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Comida 1</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Comida 1</p>
                 </div>
-                <hr>
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/12.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
-
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Dulces 3</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Cafe 3</p>
-                    </div>
-                </div>
-                <hr>
-
             </div>
-
-            <div id="Comida" class="w3-container menu w3-padding-32 w3-white">
-
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/13.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
-
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Comida 1</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Comida 1</p>
-                    </div>
+            <hr>
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/14.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
                 </div>
-                <hr>
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/14.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
 
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Comida 2</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Comida 2</p>
-                    </div>
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Comida 2</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Comida 2</p>
                 </div>
-                <hr>
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/15.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
-
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Comida 3</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Comida 3</p>
-                    </div>
-                </div>
-                <hr>
-
             </div>
-
-            <div id="Helados" class="w3-container menu w3-padding-32 w3-white">
-
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/16.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
-
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Helado 1</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Helado 1</p>
-                    </div>
+            <hr>
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/15.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
                 </div>
-                <hr>
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/17.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
 
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Helado 2</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Helado 2</p>
-                    </div>
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Comida 3</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Comida 3</p>
                 </div>
-                <hr>
-                <div class="w3-row">
-                    <div style="width:200px;height:200px;background-image: url(Images_Prueba/18.webp);background-size: cover;"
-                        class="w3-container w3-circle w3-col s3 l2 ">
-                        <!-- Imagen del Menu -->
-                    </div>
-
-                    <div class="w3-col s9 l10 w3-container">
-                        <h1><b><u>Nombre Helado 3</u></b> <span
-                                class="w3-right w3-tag w3-dark-grey w3-round">$$$$</span>
-                        </h1>
-                        <p class="w3-text-grey">Descripcion Helado 3</p>
-                    </div>
-                </div>
-                <hr>
-
             </div>
 
         </div>
+
+        <div id="Helados" class="w3-container menu w3-padding-32 w3-white">
+
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/16.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
+                </div>
+
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Helado 1</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Helado 1</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/17.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
+                </div>
+
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Helado 2</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Helado 2</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div style="width:150px;height: 150px;background-image:url(Images_Prueba/18.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-col s3 l2 ">
+                    <!-- Imagen del Menu -->
+                </div>
+
+                <div class="w3-col s9 l10 w3-container">
+                    <h3><b><u>Nombre Helado 3</u></b> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                    </h3>
+                    <p class="w3-text-grey">Descripcion Helado 3</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
     </div>
 
     <!-- About Container -->
@@ -374,16 +389,16 @@
             </div>
 
         </div>
+
+        <!-- Image of location/map -->
+        <img src="#Agregar_imagen" class="w3-image w3-greyscale" style="width:100%;" id="myMap"
+            alt="Localizacion del lugar">
     </div>
 
-    <!-- Image of location/map -->
-    <img src="#Agregar_imagen" class="w3-image w3-greyscale" style="width:100%;" id="myMap"
-        alt="Localizacion del lugar">
-
     <!-- Contact -->
-    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contacto">
         <div class="w3-content">
-            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contacto</h1>
             <p>Informacion de contacto del lugar</p>
         </div>
     </div>
