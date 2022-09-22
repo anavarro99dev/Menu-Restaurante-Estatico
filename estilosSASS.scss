@@ -1,2 +1,83 @@
 @import "reset";
 @import "util";
+
+.bgimg {
+    @include desktop {
+        background-image: url("/Images_Prueba/Logo_Escritorio.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 170%;
+        width: 100%;
+    }
+
+    @include movil {
+        background-image: url("/Images_Prueba/Logo_Movil.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@include movil {
+    #contacto {
+        span {
+            font-size: 16px !important;
+        }
+
+    }
+}
+
+#Cafe,
+#Bebidas,
+#Entrantes,
+#Dulces,
+#Comida,
+#Helados {
+
+    border-radius: 0 0 10px 10px;
+
+    @include desktop {
+
+        p,
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    @include movil {
+
+        div.w3-row {
+            div.w3-circle {
+                width: 100px !important;
+                height: 100px !important;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            span {
+                font-size: 16px !important;
+            }
+        }
+
+
+    }
+}
+
+@include movil {
+
+    #about,
+    #contacto,
+    footer {
+        p {
+            font-size: 18px;
+        }
+    }
+
+}

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Nombre_del_lugar</title>
+    <title>katarsis_bar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="w3.css">
@@ -16,13 +16,32 @@
 
     <!-- Navbar (sit on top) -->
     <!-- TODO: Realiar codigo JS para ocultar el top-side-navbar al llegar exactamente al menu -->
-    <!-- <div class="w3-top w3-hide-small"> -->
-    <div class="w3-hide-small">
+    <div class="w3-hide-small w3-top">
         <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
             <a href="#" class="w3-bar-item w3-button">HOME</a>
             <a href="#menu" class="w3-bar-item w3-button">MENU</a>
             <a href="#about" class="w3-bar-item w3-button">Sobre Nosotros</a>
             <a href="#myMap" class="w3-bar-item w3-button">Contactenos</a>
+            <a href="https://m.facebook.com/katarsis_bar-103754788923905/?ref=page_internal"
+                class="w3-bar-item w3-button w3-right"><i><b>Katarsis Bar</b></i></a>
+        </div>
+    </div>
+
+    <div class="w3-top w3-hide-large w3-hide-medium">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="https://m.facebook.com/katarsis_bar-103754788923905/?ref=page_internal"
+                class="w3-bar-item w3-button w3-left"><i><b>Katarsis Bar</b></i>
+            </a>
+            <a download href="/Images_Prueba/QR_CodePrueba.png" class="w3-bar-item w3-button w3-right">
+                <div class="w3-" style="
+                    background-color: white;
+                    background-image: url(Images_Prueba/icons8-código-qr-32.png);
+                    background-repeat: no-repeat;
+                    width: 32px;
+                    height: 32px;
+            "></div>
+            </a>
+
         </div>
     </div>
 
@@ -30,54 +49,96 @@
     <header class="bgimg w3-display-container w3-grayscale-min" id="home">
         <div class="w3-display-bottomleft w3-padding">
             <a href="#Horario" style="scroll-behavior:smooth;" class="w3-hide-small">
-                <span id="boton_horario"
-                    class="w3-tag w3-button w3-xlarge w3-black"
-                    >
+                <span class="boton_horario w3-tag w3-button w3-xlarge w3-black">
+                    Horario de Apertura
+                </span>
+            </a>
+        </div>
+        <div class="w3-display-bottommiddle w3-padding"
+        style="margin-bottom: 54px;"
+        >
+            <a href="#Horario" style="scroll-behavior:smooth;" class="w3-hide-large w3-hide-medium">
+                <span class="boton_horario w3-tag w3-button w3-xlarge w3-black">
                     Horario de Apertura
                 </span>
             </a>
         </div>
         <div class="w3-display-bottomright w3-padding">
             <a href="#menu" class="w3-hide-small">
-                <span id="boton_menu"
-                class="w3-tag- w3-button w3-xlarge w3-black"
-                >
-                Muestrame el MENU
+                <span id="boton_menu" class="w3-tag w3-button w3-xlarge w3-black">
+                    Muestrame el <b>MENU</b>
                 </span>
             </a>
         </div>
-        <div class="w3-display-middle w3-center">
-            <span class="w3-hide-small" style="font-size:180px;color:#955251"><b>Nombre<br>del Lugar</b></span>
-            <span class="w3-hide-large w3-hide-medium" style="font-size:60px;color: #955251">
-                <b>Nombre<br>del Lugar</b>
-            </span>
+        <div class="w3-display-topmiddle w3-padding"
+        style="margin-top: 54px;"
+        >
+            <a href="#menu" class="w3-hide-large w3-hide-medium">
+                <span id="boton_menu" class="w3-tag w3-button w3-xlarge w3-black">
+                    Muestrame el <b>MENU</b>
+                </span>
+            </a>
         </div>
     </header>
 
     <!-- Menu Container -->
     <!-- TODO: No realizado. Realizar el Menu como un Scrool-Spy -->
-    <div class="w3-container w3-black w3-padding-64 w3-large" id="menu">
+    <div class="w3-container w3-padding-64 w3-large w3-black" id="menu">
 
-        <h1 class="w3-center w3-xxlarge" style="margin-bottom:64px">MENU</h1>
-        <div class="w3-row w3-center w3-border w3-border-dark-grey">
-            <a href="javascript:void(0)" onclick="openMenu(event, 'Cafe');" id="myLink">
-                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Cafe</div>
+        <div class="w3-hide-small">
+            <h1 class="w3-center w3-xxlarge" style="margin-bottom:64px;font-size: 82px !important;"><b><u>MENU</u>:</b>
+            </h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey w3-card-4"
+                style="font-size: 32px;border-radius: 10px 10px 0 0;">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Cafe');" id="myLink">
+                    <div class="w3-col s2 tablink w3-padding-large w3-hover-dark-grey">Cafe</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
+                    <div class="w3-col s2 tablink w3-padding-large w3-hover-dark-grey">Bebidas</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Entrantes');">
+                    <div class="w3-col s2 tablink w3-padding-large w3-hover-dark-grey">Entrantes</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Dulces');">
+                    <div class="w3-col s2 tablink w3-padding-large w3-hover-dark-grey">Dulces</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Comida');">
+                    <div class="w3-col s2 tablink w3-padding-large w3-hover-dark-grey">Comida</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Helados');">
+                    <div class="w3-col s2 tablink w3-padding-large w3-hover-dark-grey">Helados</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-center w3-border w3-border-dark-grey w3-brown" style="border-radius: 10px 10px 0 0;">
+            <a onclick="myFunction()" href="javascript:void(0)"
+                class="w3-button w3-hide-large w3-hide-medium w3-hover-white">
+                <h1 id="h1_menu_movil" class="w3-center w3-xxlarge"><b><u>MENU</u></b> &#9776;</h1>
             </a>
-            <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
-                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Bebidas</div>
-            </a>
-            <a href="javascript:void(0)" onclick="openMenu(event, 'Entrantes');">
-                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Entrantes</div>
-            </a>
-            <a href="javascript:void(0)" onclick="openMenu(event, 'Dulces');">
-                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Dulces</div>
-            </a>
-            <a href="javascript:void(0)" onclick="openMenu(event, 'Comida');">
-                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Comida</div>
-            </a>
-            <a href="javascript:void(0)" onclick="openMenu(event, 'Helados');">
-                <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Helados</div>
-            </a>
+            <div id="boton_movil" class="w3-hide w3-hide-large w3-hide-medium w3-black">
+                <div>
+                    <a class="w3-bar-block" href="javascript:void(0)" onclick="openMenu(event, 'Cafe');myFunction()">
+                        <div class="tablink w3-padding-large w3-hover-dark-grey">Cafe</div>
+                    </a>
+                    <a class="w3-bar-block" href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');myFunction()">
+                        <div class="tablink w3-padding-large w3-hover-dark-grey">Bebidas</div>
+                    </a>
+                    <a class="w3-bar-block" href="javascript:void(0)"
+                        onclick="openMenu(event, 'Entrantes');myFunction()">
+                        <div class="tablink w3-padding-large w3-hover-dark-grey">Entrantes</div>
+                    </a>
+                    <a class="w3-bar-block" href="javascript:void(0)" onclick="openMenu(event, 'Dulces');myFunction()">
+                        <div class="tablink w3-padding-large w3-hover-dark-grey">Dulces</div>
+                    </a>
+                    <a class="w3-bar-block" href="javascript:void(0)" onclick="openMenu(event, 'Comida');myFunction()">
+                        <div class="tablink w3-padding-large w3-hover-dark-grey">Comida</div>
+                    </a>
+                    <a class="w3-bar-block" href="javascript:void(0)" onclick="openMenu(event, 'Helados');myFunction()">
+                        <div class="tablink w3-padding-large w3-hover-dark-grey">Helados</div>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <!-- TODO: Hacer una funcion de JS para automatizar este proceso -->
@@ -86,325 +147,404 @@
             <!-- TODO: Arreglar la vista movil -->
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/1.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Cafe 1</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Cafe 1</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
 
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/2.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Cafe 2</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Cafe 2</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
             <div class="w3-row">
-                <div style="width:150px;height: 150px;background-image:url(Images_Prueba/3.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/3.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Cafe 3</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Cafe 3</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
-
-
         </div>
 
         <div id="Bebidas" class="w3-container menu w3-padding-32 w3-white">
 
             <div class="w3-row">
-                <div style="width:150px;height: 150px;background-image:url(Images_Prueba/4.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/4.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Bebida 1</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Bebida 1</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/5.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Bebida 2</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Bebida 2</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/6.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Bebida 3</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Bebida 3</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
-
-
         </div>
 
         <div id="Entrantes" class="w3-container menu w3-padding-32 w3-white">
 
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/7.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Entrante 1</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Entrante 1</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/8.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Entrante 2</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Entrante 2</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/9.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Entrante 3</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Entrante 3</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
-
-
         </div>
 
         <div id="Dulces" class="w3-container menu w3-padding-32 w3-white">
 
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/10.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Dulce 1</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Dulces 1</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/11.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Dulces 2</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Dulces 2</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/12.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Dulces 3</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Cafe 3</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
-
-
         </div>
 
         <div id="Comida" class="w3-container menu w3-padding-32 w3-white">
 
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/13.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Comida 1</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Comida 1</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/14.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Comida 2</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Comida 2</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/15.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Comida 3</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Comida 3</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
-
         </div>
 
         <div id="Helados" class="w3-container menu w3-padding-32 w3-white">
 
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/16.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Helado 1</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Helado 1</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
             <div class="w3-row">
                 <div style="width:150px;height:150px;background-image:url(Images_Prueba/17.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Helado 2</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Helado 2</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
             <hr>
             <div class="w3-row">
-                <div style="width:150px;height: 150px;background-image:url(Images_Prueba/18.webp);background-size:cover;"
-                    class="w3-container w3-circle w3-col s3 l2 ">
+                <div style="width:150px;height:150px;background-image:url(Images_Prueba/18.webp);background-size:cover;"
+                    class="w3-container w3-circle w3-third">
                     <!-- Imagen del Menu -->
                 </div>
-
-                <div class="w3-col s9 l10 w3-container">
-                    <h3><b><u>Nombre Helado 3</u></b> <span
-                            class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge">$$$$</span>
+                <div class="w3-rest w3-container" style="min-height: 100px;">
+                    <h3><b><u>Nombre </u></b>
                     </h3>
-                    <p class="w3-text-grey">Descripcion Helado 3</p>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round w3-xxlarge w3-hide-small">
+                        $$$$
+                    </span>
+                    <p class="w3-text-grey"><i>Descripcion</i> </p>
+                    <span class="w3-left w3-tag w3-dark-grey w3-round w3-hide-large w3-hide-medium">
+                        $$$$
+                    </span>
                 </div>
             </div>
-
         </div>
 
-    </div>
     </div>
 
     <!-- About Container -->
     <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
         <div class="w3-content">
 
-            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Sobre nosotros: </h1>
-            <p>Descripcion corta del lugar.</p>
-            <img src="#Agragar_imagen" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Imagen del lugar">
-            <h1 id="Horario"><b>Horario: </b></h1>
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:32px"><b>Sobre nosotros:</b> </h1>
+            <div class="w3-center" style="margin-bottom:32px">
+                <p>Descripcion corta del lugar.</p>
+            </div>
+            <!-- <img src="#Agragar_imagen" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Imagen del lugar"> -->
+            <h1 id="Horario"><b><i><u>Horario</u></i>: </b></h1>
             <div class="w3-row">
-                <div class="w3-col s6">
+                <div class="w3-col m6 l6">
                     <p>Lunes <span class="dia">CLOSED</span></p>
                     <p>Martes <span class="dia">CLOSED</span></p>
                     <p>Miercoles <span class="dia">10.00 - 12.00</span></p>
                     <p>Jueves <span class="dia">10:00 - 5:00</span></p>
                 </div>
-                <div class="w3-col s6">
+                <div class="w3-col m6 l6">
                     <p>Viernes <span class="dia">1:00 - 12:00</span></p>
                     <p>Sabado <span class="dia">10:00 - 11:00</span></p>
                     <p>Domingo <span class="dia">Closed</span></p>
                 </div>
             </div>
 
+            <!-- Image of location/map -->
+            <a class="w3-hide-small"
+                href="https://www.google.com/maps/dir//93HP+W2C+Cafeter%C3%ADa,+Marti,+Camag%C3%BCey/@21.3794418,-77.9168656,17z/data=!4m16!1m6!3m5!1s0x8ed38065140c0a63:0x778636e4948298d3!2sCafeter%C3%ADa!8m2!3d21.3798165!4d-77.9149827!4m8!1m0!1m5!1m1!1s0x8ed38065140c0a63:0x778636e4948298d3!2m2!1d-77.9149827!2d21.3798165!3e2?hl=es">
+                <img src="Images_Prueba/Mapa.jpg" class="w3-card-4 w3-image w3-greyscale w3-border w3-round" id="myMap"
+                    alt="Localizacion del lugar" style="width:75%;height:75%;">
+            </a>
         </div>
 
-        <!-- Image of location/map -->
-        <img src="#Agregar_imagen" class="w3-image w3-greyscale" style="width:100%;" id="myMap"
-            alt="Localizacion del lugar">
     </div>
 
     <!-- Contact -->
     <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contacto">
         <div class="w3-content">
-            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contacto</h1>
-            <p>Informacion de contacto del lugar</p>
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><b>Contacto:</b></h1>
+            <ul>
+                <li>
+                    <p>Numero de Telefono: <span
+                            style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;"><b>+53</b>
+                            54660224</span></p>
+                </li>
+                <li>
+                    <p> Correo Electronico: <i><span
+                                style="font-family:Arial, Helvetica, sans-serif;font-size: 20px;">delrisconoel@gmail.com</span></i>
+                    </p>
+                </li>
+                <li>Dueño del local: </li>
+                <li>Trabajadores: </li>
+            </ul>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge w3-hide-small">
         <p>Descarga del codigo QR <a download href="/Images_Prueba/QR_CodePrueba.png" title="W3.CSS" target="_blank"
                 class="w3-hover-text-green">Aqui</a></p>
     </footer>

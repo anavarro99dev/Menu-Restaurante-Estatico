@@ -16,11 +16,5 @@ h6 {
     display: none
 }
 
-.bgimg {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/Images_Prueba/Logo_Corregido.jpg");
-    min-height: 120%;
-}
 
 /* Con SASS realizar estilos responsive para la vista movil y la vista de tablet     */

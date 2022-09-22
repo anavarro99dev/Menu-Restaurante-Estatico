@@ -7,14 +7,15 @@ function openMenu(evt, menuName) {
     }
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
     }
     document.getElementById(menuName).style.display = "block";
-    evt.currentTarget.firstElementChild.className += " w3-red";
+    // evt.currentTarget.firstElementChild.className += " w3-red";
 }
 
 function mostrarHorario() {
-    mostrar_dia = document.getElementById("boton_horario");
+    mostrar_diaDesk = document.getElementsByClassName("boton_horario")[0];
+    mostrar_diaMovil = document.getElementsByClassName("boton_horario")[1];
     Dia_actual = new Date()
 
     Horario = document.getElementsByClassName("dia")
@@ -31,31 +32,48 @@ function mostrarHorario() {
 
     switch (Dia_actual.getDay()) {
         case 1:
-            mostrar_dia.innerHTML = "Apertura: " + "Lunes, " + HorarioActual.Lunes;
+            mostrar_diaDesk.innerHTML = "<u>Apertura</u>: " + "<i><b>Lunes</b></i>, " + HorarioActual.Lunes;
+            mostrar_diaMovil.innerHTML = "<i><b>Lunes</b></i>, " + HorarioActual.Lunes;
             break;
         case 2:
-            mostrar_dia.innerHTML = "Apertura: " + "Martes, " + HorarioActual.Martes;
+            mostrar_diaDesk.innerHTML = "<u>Apertura</u>: " + "<i><b>Martes</b></i>, " + HorarioActual.Martes;
+            mostrar_diaMovil.innerHTML = "<i><b>Martes</b></i>, " + HorarioActual.Martes;
             break;
         case 3:
-            mostrar_dia.innerHTML = "Apertura: " + "Miercoles, " + HorarioActual.Miercoles;
+            mostrar_diaDesk.innerHTML = "<u>Apertura</u>: " + "<i><b>Miercoles</b></i>, " + HorarioActual.Miercoles;
+            mostrar_diaMovil.innerHTML = "<i><b>Miercoles</b></i>, " + HorarioActual.Miercoles;
             break;
         case 4:
-            mostrar_dia.innerHTML = "Apertura: " + "Jueves, " + HorarioActual.Jueves;
+            mostrar_diaDesk.innerHTML = "<u>Apertura</u>: " + "<i><b>Jueves</b></i>, " + HorarioActual.Jueves;
+            mostrar_diaMovil.innerHTML = "<i><b>Jueves</b></i>, " + HorarioActual.Jueves;
             break;
         case 5:
-            mostrar_dia.innerHTML = "Apertura: " + "Viernes, " + HorarioActual.Viernes;
+            mostrar_diaDesk.innerHTML = "<u>Apertura</u>: " + "<i><b>Viernes</b></i>, " + HorarioActual.Viernes;
+            mostrar_diaMovil.innerHTML = "<i><b>Viernes</b></i>, " + HorarioActual.Viernes;
             break;
         case 6:
-            mostrar_dia.innerHTML = "Apertura: " + "Sabado, " + HorarioActual.Sabado;
+            mostrar_diaDesk.innerHTML = "<u>Apertura</u>: " + "<i><b>Sabado</b></i>, " + HorarioActual.Sabado;
+            mostrar_diaMovil.innerHTML = "<i><b>Sabado</b></i>, " + HorarioActual.Sabado;
             break;
         case 7:
-            mostrar_dia.innerHTML = "Apertura: " + "Domingo, " + HorarioActual.Domingo;
+            mostrar_diaDesk.innerHTML = "<u>Apertura</u>: " + "<i><b>Domingo</b></i>, " + HorarioActual.Domingo;
+            mostrar_diaMovil.innerHTML = "<i><b>Domingo</b></i>, " + HorarioActual.Domingo;
             break;
         default:
-            mostrar_dia.innerHTML = "Error";
-            break;
+            mostrar_diaDesk.innerHTML = "Error";
+            breMomostrar_diaMovilak;
     }
 }
+
+function myFunction() {
+    var x = document.getElementById("boton_movil");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
 
 document.getElementById("myLink").click();
 mostrarHorario();

@@ -104,4 +104,96 @@ select {
   .grid {
     display: initial;
   }
+}
+
+@media screen and (min-width: 46.875rem) {
+  .bgimg {
+    background-image: url("/Images_Prueba/Logo_Escritorio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 170%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 46.875rem) {
+  .bgimg {
+    background-image: url("/Images_Prueba/Logo_Movil.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  #contacto span {
+    font-size: 16px !important;
+  }
+}
+#Cafe,
+#Bebidas,
+#Entrantes,
+#Dulces,
+#Comida,
+#Helados {
+  border-radius: 0 0 10px 10px;
+}
+@media screen and (min-width: 46.875rem) {
+  #Cafe p,
+#Cafe h3,
+#Bebidas p,
+#Bebidas h3,
+#Entrantes p,
+#Entrantes h3,
+#Dulces p,
+#Dulces h3,
+#Comida p,
+#Comida h3,
+#Helados p,
+#Helados h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 46.875rem) {
+  #Cafe div.w3-row div.w3-circle,
+#Bebidas div.w3-row div.w3-circle,
+#Entrantes div.w3-row div.w3-circle,
+#Dulces div.w3-row div.w3-circle,
+#Comida div.w3-row div.w3-circle,
+#Helados div.w3-row div.w3-circle {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  #Cafe div.w3-row h3,
+#Bebidas div.w3-row h3,
+#Entrantes div.w3-row h3,
+#Dulces div.w3-row h3,
+#Comida div.w3-row h3,
+#Helados div.w3-row h3 {
+    font-size: 16px;
+  }
+  #Cafe div.w3-row p,
+#Bebidas div.w3-row p,
+#Entrantes div.w3-row p,
+#Dulces div.w3-row p,
+#Comida div.w3-row p,
+#Helados div.w3-row p {
+    font-size: 14px;
+  }
+  #Cafe div.w3-row span,
+#Bebidas div.w3-row span,
+#Entrantes div.w3-row span,
+#Dulces div.w3-row span,
+#Comida div.w3-row span,
+#Helados div.w3-row span {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  #about p,
+#contacto p,
+footer p {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=estilosSASS.css.map */
