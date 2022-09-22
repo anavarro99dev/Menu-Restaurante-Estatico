@@ -108,7 +108,8 @@ select {
 
 @media screen and (min-width: 46.875rem) {
   .bgimg {
-    background-image: "/Images_Prueba/Logo_Escritorio.jpg";
+    background-image: url("./Images_Prueba/Logo_Escritorio.jpg");
+    background-image: url("Images_Prueba/Logo_Escritorio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 170%;
@@ -117,7 +118,8 @@ select {
 }
 @media screen and (max-width: 46.875rem) {
   .bgimg {
-    background-image: "/Images_Prueba/Logo_Movil.jpg";
+    background-image: url("./Images_Prueba/Logo_Movil.jpg");
+    background-image: url("Images_Prueba/Logo_Movil.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
